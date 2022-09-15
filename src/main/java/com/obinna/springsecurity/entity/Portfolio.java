@@ -27,6 +27,10 @@ public class Portfolio {
         return this.username;
     }
 
+    public void addTransaction(Transaction transaction) {
+        transactions.add(transaction);
+    }
+
     public List<Transaction> getTransactions() {
         return Collections.unmodifiableList(transactions);
     }
